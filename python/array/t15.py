@@ -8,7 +8,7 @@ from typing import *
 class Solution:
     """去重和双指针,[-2,0,0,2,2],[-1, 0, 1, 2, -1, -4]"""
 
-    def __twoSum__(self, nums: List[int], target: int, x: int) -> List[List[int]]:
+    def __twoSum(self, nums: List[int], target: int, x: int) -> List[List[int]]:
         res = []
         i, j = x, self.n - 1
         while i < j:
@@ -49,7 +49,7 @@ class Solution:
         res = set()
         x = 0
         while x < self.n - 2:
-            two_res = self.__twoSum__(nums, -nums[x], x + 1)
+            two_res = self.__twoSum(nums, -nums[x], x + 1)
             for t in two_res:
                 t.append(nums[x])
                 t.reverse()
