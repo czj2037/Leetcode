@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Create By c00417123 at 2020/4/3
+# Create at 2020/4/3
 import sys
 from typing import List
 
