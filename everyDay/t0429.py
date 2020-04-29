@@ -151,7 +151,7 @@ def binary_search(mountain, target, l, r, key=lambda x: x):
             r = mid - 1
     return -1
 
-class Solution:
+class Solution_2:
     def findInMountainArray(self, target: int, mountain_arr: 'MountainArray') -> int:
         l, r = 0, mountain_arr.length() - 1
         while l < r:
